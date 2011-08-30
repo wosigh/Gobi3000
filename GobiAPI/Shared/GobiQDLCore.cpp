@@ -232,7 +232,7 @@ std::vector <std::string> cGobiQDLCore::GetAvailableQDLPorts()
       ret = read( handle, buff, 4 );
       if (ret == 4)
       {
-         ret = strncmp( buff, "920c", 4 );
+         ret = strncmp( buff, "9008", 4 );
          if (ret == 0)
          {
             bFound = true;
